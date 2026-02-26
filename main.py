@@ -24,11 +24,10 @@ def print_pokemon_info(pokemon_info):
     print(f'Name: {pokemon_info["name"].capitalize()}')
     print(f'Height: {pokemon_info["height"]}')
     print(f'Weight: {pokemon_info["weight"]}')
-    print(f': {pokemon_info["age"]}')
     return
 
 # PERFORM FUNCTIONS
-name = ask_user_for_pokemon_wanted()
+name = ask_user_for_pokemon_wanted()    
 data = get_pokemon_info(name)
 print_pokemon_info(data)
 
